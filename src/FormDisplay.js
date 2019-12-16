@@ -55,7 +55,8 @@ class FormDisplay extends Component {
             type="checkbox"
             label="Custom ID"
             name="idFlag"
-            containerClass="form-check"
+            containerClass="form-check custom-checkbox"
+            inputClass="form-check-input"
             labelClass="form-check-label"
             checked={idFlag}
             onChange={this.handleChange}
