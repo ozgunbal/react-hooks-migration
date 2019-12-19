@@ -43,7 +43,7 @@ class FormDisplay extends Component {
               id="hobby"
               value={hobby}
               onChange={this.handleChange}
-              class="form-control"
+              className="form-control"
             >
               <option value="cooking">cooking</option>
               <option value="running">running</option>
