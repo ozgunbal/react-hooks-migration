@@ -13,3 +13,7 @@ React hooks (v16.8) is used to refactor class component and HoCs(Higher Order Co
 In _master_ branch old version exists, _migration_ branch contains hook version of the code.
 
 _Presentation link of the topic is [here](https://slides.com/ozgunbal/react-hooks-migration)_
+
+
+_Relevant medium article (in Turkish) of the topic is [here](https://medium.com/innovance-company-blog/react-hook-kanca-geçişi-ea276dd9ec76)_
+
