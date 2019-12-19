@@ -7,6 +7,9 @@ const sendForm = form => ({
   payload: form
 });
 
+const setter = handler => ({ target }) =>
+  handler(target.type === "checkbox" ? target.checked : target.value);
+
 const FormDisplay = ({ number }) => {
   const dispatch = useDispatch();
   const [name, setName] = useState("");
@@ -35,19 +38,19 @@ const FormDisplay = ({ number }) => {
           label="Full name"
           name="name"
           value={name}
-          onChange={evt => setName(evt.target.value)}
+          onChange={setter(setName)}
         />
         <Field label="Hobbies" id="hobby">
           <select
             name="hobby"
             className="form-control"
             value={hobby}
-            onChange={evt => setHobby(evt.target.value)}
+            onChange={setter(setHobby)}
           >
             <option value="cooking">cooking</option>
-            <option value="cooking">running</option>
-            <option value="cooking">coding</option>
-            <option value="cooking">driving</option>
+            <option value="running">running</option>
+            <option value="coding">coding</option>
+            <option value="driving">driving</option>
           </select>
         </Field>
         <Field
@@ -58,7 +61,7 @@ const FormDisplay = ({ number }) => {
           inputClass="form-check-input"
           labelClass="form-check-label"
           checked={idFlag}
-          onChange={evt => setIdFlag(evt.target.checked)}
+          onChange={setter(setIdFlag)}
         />
         {idFlag && (
           <Field
@@ -66,7 +69,7 @@ const FormDisplay = ({ number }) => {
             type="number"
             name="id"
             value={id}
-            onChange={evt => setId(evt.target.value)}
+            onChange={setter(setId)}
           />
         )}
         <button type="submit" className="btn btn-primary">
