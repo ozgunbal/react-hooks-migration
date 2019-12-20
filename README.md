@@ -17,3 +17,4 @@ _Presentation link of the topic is [here](https://slides.com/ozgunbal/react-hook
 
 _Relevant medium article (in Turkish) of the topic is [here](https://medium.com/innovance-company-blog/react-hook-kanca-geçişi-ea276dd9ec76)_
 
+_Video prensentation of the topic is [here](https://mega.nz/#!m7gAjQJQ!CSLAR_vnmn68RDLqK23R-9_oKeN5vyRS3CzpMXcVlcA)_
